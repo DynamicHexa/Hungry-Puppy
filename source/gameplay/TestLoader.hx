@@ -8,7 +8,10 @@ class TestLoader extends FlxState
 {
 	override public function create()
 	{
-		FlxG.switchState(new PlayState(1, [[FlxKey.LEFT, FlxKey.RIGHT, FlxKey.SPACE]]));
+		FlxG.switchState(new PlayState(2, [
+			[FlxKey.A, FlxKey.D, FlxKey.E, FlxKey.Q],
+			[FlxKey.LEFT, FlxKey.RIGHT, FlxKey.DOWN, FlxKey.UP]
+		], [[140, 255, 0], [140, 0, 255]]));
 		super.create();
 	}
 }
